@@ -6,8 +6,8 @@
  */
 
 const GOOGLE_DRIVE_LINKS = {
-  windows: 'https://drive.google.com/drive/folders/YOUR_GOOGLE_DRIVE_WINDOWS_LINK',
-  macos:   'https://drive.google.com/drive/folders/YOUR_GOOGLE_DRIVE_MACOS_LINK',
+  windows: 'https://drive.google.com/file/d/1TLD8nOrt3c3l3J52kZ3ZAcbk2-EgHobF/view?usp=sharing',
+  macos:   'https://drive.google.com/file/d/1FasxCYfAqauVtSRsnj2_xT1pW40WVz89/view?usp=sharing',
   linux:   'https://drive.google.com/drive/folders/YOUR_GOOGLE_DRIVE_LINUX_LINK'
 };
 
@@ -69,13 +69,13 @@ function initDownloadHub() {
 
   tabs.forEach(t => t.addEventListener('click', () => switchOS(t.dataset.os)));
 
-  // Set Google Drive links
+  // Set Google Drive links (skip placeholders like the pending Linux build)
   const wins = document.getElementById('btn-gdrive-windows');
   const macs = document.getElementById('btn-gdrive-macos');
   const lins = document.getElementById('btn-gdrive-linux');
-  if (wins) wins.href = GOOGLE_DRIVE_LINKS.windows;
-  if (macs) macs.href = GOOGLE_DRIVE_LINKS.macos;
-  if (lins) lins.href = GOOGLE_DRIVE_LINKS.linux;
+  if (wins && !GOOGLE_DRIVE_LINKS.windows.includes('YOUR_GOOGLE_DRIVE')) wins.href = GOOGLE_DRIVE_LINKS.windows;
+  if (macs && !GOOGLE_DRIVE_LINKS.macos.includes('YOUR_GOOGLE_DRIVE')) macs.href = GOOGLE_DRIVE_LINKS.macos;
+  if (lins && lins.tagName === 'A' && !GOOGLE_DRIVE_LINKS.linux.includes('YOUR_GOOGLE_DRIVE')) lins.href = GOOGLE_DRIVE_LINKS.linux;
 
   switchOS(detected);
 }
@@ -264,8 +264,9 @@ function initFooterOsLinks() {
 
   const btnIds = { windows: 'footer-dl-win', macos: 'footer-dl-mac', linux: 'footer-dl-linux' };
   const btn = document.getElementById(btnIds[detected]);
-  if (btn) {
-    btn.href = GOOGLE_DRIVE_LINKS[detected];
+  const url = GOOGLE_DRIVE_LINKS[detected];
+  if (btn && url && !url.includes('YOUR_GOOGLE_DRIVE')) {
+    btn.href = url;
     btn.target = '_blank';
     btn.rel = 'noopener';
   }

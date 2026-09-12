@@ -814,6 +814,20 @@ code {
   color: #fff;
 }
 
+.btn-gdrive-disabled,
+.btn-gdrive-disabled:hover {
+  cursor: not-allowed;
+  opacity: 0.65;
+  transform: none;
+  box-shadow: 0 4px 16px rgba(99,102,241,0.25);
+}
+
+.gdrive-badge-soon {
+  background: rgba(245, 158, 11, 0.12);
+  color: var(--accent-amber);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
 /* Spec Pills Row */
 .download-specs-row {
   display: flex;
