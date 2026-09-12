@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initNavbarScroll();
   initFooterOsLinks();
+  initCopyEmail();
 });
 
 /* ─── 1. Theme Engine ──────────────────────────────────────────────────── */
@@ -268,4 +269,21 @@ function initFooterOsLinks() {
     btn.target = '_blank';
     btn.rel = 'noopener';
   }
+}
+
+/* ─── 8. Copy-email UX ─────────────────────────────────────────────────── */
+function initCopyEmail() {
+  document.querySelectorAll('[data-copy-email]').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const email = btn.getAttribute('data-copy-email') || '';
+      const original = btn.textContent;
+      try {
+        await navigator.clipboard.writeText(email);
+        btn.textContent = 'Copied ✓';
+      } catch {
+        btn.textContent = email;
+      }
+      setTimeout(() => { btn.textContent = original; }, 1600);
+    });
+  });
 }

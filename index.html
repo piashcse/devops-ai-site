@@ -20,10 +20,10 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://piashcse.github.io/devops-ai/">
+  <meta property="og:url" content="https://piashcse.github.io/devops-ai-site/">
   <meta property="og:title" content="DevOps AI — Autonomous Desktop Control Plane for Linux Infrastructure">
   <meta property="og:description" content="Local-first autonomous DevOps desktop. Native Google Drive installers for Windows, macOS, and Linux.">
-  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:image" content="https://piashcse.github.io/devops-ai-site/assets/logo.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/logo.png">
@@ -217,6 +217,135 @@
       border-color: #e11d48 !important;
       box-shadow: 0 4px 14px rgba(225, 29, 72, 0.35);
     }
+    .chip-x:hover {
+      color: #ffffff !important;
+      background: #000000 !important;
+      border-color: #000000 !important;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+    }
+    .chip-medium:hover {
+      color: #ffffff !important;
+      background: #00ab6c !important;
+      border-color: #00ab6c !important;
+      box-shadow: 0 4px 14px rgba(0, 171, 108, 0.35);
+    }
+    .chip-web:hover {
+      color: #ffffff !important;
+      background: #4f46e5 !important;
+      border-color: #4f46e5 !important;
+      box-shadow: 0 4px 14px rgba(79, 70, 229, 0.4);
+    }
+    .chip-blog:hover {
+      color: #ffffff !important;
+      background: #f59e0b !important;
+      border-color: #f59e0b !important;
+      box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+    }
+    .creator-section-head {
+      max-width: 560px;
+      margin-bottom: 18px;
+    }
+    .creator-section-kicker {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--primary-light);
+      margin-bottom: 8px;
+    }
+    [data-theme="light"] .creator-section-kicker {
+      color: var(--primary);
+    }
+    .creator-section-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+    [data-theme="light"] .creator-section-title {
+      color: #0f172a;
+    }
+    .creator-section-sub {
+      font-size: 0.86rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    [data-theme="light"] .creator-section-sub {
+      color: #64748b;
+    }
+    .creator-showcase-card {
+      align-items: flex-start;
+    }
+    .creator-role {
+      max-width: 420px;
+      line-height: 1.55;
+    }
+    .creator-focus-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+    .creator-focus-pill {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      color: var(--text-secondary);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+    }
+    [data-theme="light"] .creator-focus-pill {
+      color: #475569;
+      background: #f8fafc;
+      border-color: #e2e8f0;
+    }
+    .creator-connect-col {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 460px;
+    }
+    .creator-connect-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+    }
+    .creator-email-row {
+      display: flex;
+      align-items: stretch;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .chip-email-primary {
+      background: linear-gradient(135deg, #e11d48 0%, #f43f5e 100%) !important;
+      border-color: rgba(225, 29, 72, 0.5) !important;
+      color: #ffffff !important;
+      box-shadow: 0 4px 14px rgba(225, 29, 72, 0.3);
+    }
+    .creator-copy-btn {
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 8px 14px;
+      border-radius: 10px;
+      color: var(--text-secondary);
+      background: transparent;
+      border: 1px dashed var(--border-medium);
+      transition: all 0.2s ease;
+    }
+    .creator-copy-btn:hover {
+      color: var(--text-primary);
+      border-color: var(--primary-light);
+      border-style: solid;
+    }
+    [data-theme="light"] .creator-copy-btn {
+      color: #475569;
+      border-color: #cbd5e1;
+    }
     [data-theme="light"] .brand-gradient-ai {
       background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%) !important;
       -webkit-background-clip: text !important;
@@ -231,6 +360,13 @@
         padding: 18px 20px;
       }
       .creator-links-col {
+        width: 100%;
+      }
+      .creator-connect-col {
+        width: 100%;
+        max-width: none;
+      }
+      .creator-email-row {
         width: 100%;
       }
     }
@@ -942,25 +1078,27 @@
           </ul>
         </div>
 
-        <!-- Col 3: Company & Support -->
+        <!-- Col 3: Contact -->
         <div class="footer-nav-col">
-          <h4 class="footer-heading">PLabs &amp; Support</h4>
+          <h4 class="footer-heading">Contact</h4>
           <ul class="footer-list">
-            <li><a href="https://github.com/piashcse" target="_blank" rel="noopener"><strong>PLabs</strong> Organization</a></li>
-            <li><a href="mailto:piash599@gmail.com">Contact Support</a></li>
-            <li><a href="https://github.com/piashcse" target="_blank" rel="noopener">Report Issue / Feedback</a></li>
-            <li><a href="#">Privacy &amp; Local Guarantee</a></li>
-            <li><a href="#">Terms of Service</a></li>
+            <li><a href="mailto:piash599@gmail.com"><span class="footer-os-icon">✉️</span> <span>piash599@gmail.com</span></a></li>
+            <li><a href="https://github.com/piashcse" target="_blank" rel="noopener"><span class="footer-os-icon">🐙</span> <span>Report an issue</span></a></li>
           </ul>
         </div>
       </div>
 
       <!-- Dedicated Creator & Founder Section -->
       <div class="footer-creator-section">
+        <div class="creator-section-head">
+          <span class="creator-section-kicker">Meet the developer</span>
+          <h3 class="creator-section-title">Built &amp; maintained by one engineer</h3>
+          <p class="creator-section-sub">Direct line to the person shipping DevOps AI — no support queue, no middlemen.</p>
+        </div>
         <div class="creator-showcase-card">
           <div class="creator-profile-col">
             <div class="creator-avatar-wrap">
-              <div class="creator-avatar">MP</div>
+              <div class="creator-avatar" aria-hidden="true">MP</div>
               <span class="creator-status-indicator" title="Active Developer"></span>
             </div>
             <div class="creator-bio">
@@ -969,30 +1107,58 @@
                 <span class="creator-name">Mehedi Hassan Piash</span>
                 <span class="creator-company-pill">PLabs</span>
               </div>
-              <span class="creator-role">Founder &amp; Lead Engineer</span>
+              <span class="creator-role">Founder &amp; Lead Engineer — local-first security, autonomous SRE, production Linux ops</span>
+              <div class="creator-focus-row" aria-label="Focus areas">
+                <span class="creator-focus-pill">Kotlin</span>
+                <span class="creator-focus-pill">Compose Desktop</span>
+                <span class="creator-focus-pill">Docker</span>
+                <span class="creator-focus-pill">SRE</span>
+              </div>
             </div>
           </div>
 
-          <div class="creator-links-col">
-            <a href="https://github.com/piashcse" target="_blank" rel="noopener" class="footer-social-chip chip-github" aria-label="GitHub Profile piashcse" title="GitHub: piashcse">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-              </svg>
-              <span>piashcse</span>
-            </a>
-            <a href="https://linkedin.com/in/piashcse" target="_blank" rel="noopener" class="footer-social-chip chip-linkedin" aria-label="LinkedIn Profile piashcse" title="LinkedIn: piashcse">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-              </svg>
-              <span>piashcse</span>
-            </a>
-            <a href="mailto:piash599@gmail.com" class="footer-social-chip chip-email" aria-label="Send Email to piash599@gmail.com" title="Email: piash599@gmail.com">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-              <span>piash599@gmail.com</span>
-            </a>
+          <div class="creator-connect-col">
+            <span class="creator-connect-label">Connect &amp; follow</span>
+            <div class="creator-links-col">
+              <a href="https://github.com/piashcse" target="_blank" rel="noopener" class="footer-social-chip chip-github" aria-label="GitHub Profile piashcse" title="GitHub: piashcse">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com/in/piashcse" target="_blank" rel="noopener" class="footer-social-chip chip-linkedin" aria-label="LinkedIn Profile piashcse" title="LinkedIn: piashcse">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://twitter.com/piashcse" target="_blank" rel="noopener" class="footer-social-chip chip-x" aria-label="X (Twitter) piashcse" title="X (Twitter): piashcse">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                <span>Twitter / X</span>
+              </a>
+              <a href="https://medium.com/@piashcse" target="_blank" rel="noopener" class="footer-social-chip chip-medium" aria-label="Medium piashcse" title="Medium: @piashcse">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.65 0-1.18-2.58-1.18-5.75s.53-5.75 1.18-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+                <span>Medium</span>
+              </a>
+              <a href="https://piashcse.github.io/" target="_blank" rel="noopener" class="footer-social-chip chip-web" aria-label="Personal website piashcse.github.io" title="Portfolio: piashcse.github.io">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <span>Website</span>
+              </a>
+              <a href="https://piashcse.blogspot.com" target="_blank" rel="noopener" class="footer-social-chip chip-blog" aria-label="Blog piashcse.blogspot.com" title="Blog: piashcse.blogspot.com">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                <span>Blog</span>
+              </a>
+              <div class="creator-email-row">
+                <a href="mailto:piash599@gmail.com" class="footer-social-chip chip-email chip-email-primary" aria-label="Send Email to piash599@gmail.com" title="Email: piash599@gmail.com">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>piash599@gmail.com</span>
+                </a>
+                <button type="button" class="creator-copy-btn" data-copy-email="piash599@gmail.com" aria-label="Copy email address" title="Copy email">Copy</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
