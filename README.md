@@ -18,39 +18,6 @@ Local-first. No agents. No cloud sync. Available for Windows, macOS, and Linux. 
 
 ![DevOps AI Desktop - Live Telemetry and Diagnostics (Light Mode)](assets/app-showcase-light.png)
 
-## 📥 Download
-
-<div align="center">
-
-### Free during Public Beta — No account required
-
-</div>
-
-| Platform | File | Requirements | Download |
-| :--- | :--- | :--- | :--- |
-| 🪟 **Windows** | `DevOpsAI-windows-msi.zip` | Windows 10 / 11 · 64-bit · MSI (zipped) | [**⬇ Download for Windows**](https://drive.google.com/file/d/1TLD8nOrt3c3l3J52kZ3ZAcbk2-EgHobF/view?usp=sharing) |
-| 🍏 **macOS** | `DevOpsAI-macOS-dmg.zip` | macOS 12+ · Apple Silicon (M1–M4) & Intel · Universal DMG (zipped) | [**⬇ Download for macOS**](https://drive.google.com/file/d/1FasxCYfAqauVtSRsnj2_xT1pW40WVz89/view?usp=sharing) |
-| 🐧 **Linux** | `DevOpsAI-Linux` | `.deb` · `.rpm` · `.tar.gz` · Wayland & X11 | `Coming Soon` — Windows & macOS available now |
-
-> **Google Drive Mirror** — Clicking download opens Google Drive in a new tab. No sign-in required.
->
-> Specs: `SHA-256 Verified` · `Java 21 Embedded` · `AES-256-GCM Vault` · `Zero Admin Rights Needed` (Windows) · `Apple Notarized` & `Native Keychain` (macOS)
-
-<details>
-<summary><strong>Verify your download (optional)</strong></summary>
-
-After download, verify SHA-256 if a checksum is published on the release page:
-
-```bash
-# macOS / Linux
-shasum -a 256 DevOpsAI-*.zip
-
-# Windows (PowerShell)
-Get-FileHash DevOpsAI-windows-msi.zip -Algorithm SHA256
-```
-
-</details>
-
 ## Features
 
 - **Autonomous SRE & Self-Healing** — Detects OOM events, Nginx 502/504s, and daemon crashes. Executes risk-gated playbooks: disk cleanup, pagecache flush, container restarts.
