@@ -4,9 +4,52 @@ Stop babysitting your servers. DevOps AI monitors your entire VPS fleet in real 
 
 Local-first. No agents. No cloud sync. Available for Windows, macOS, and Linux. Free during Public Beta.
 
+<p align="center">
+  <a href="https://drive.google.com/file/d/1TLD8nOrt3c3l3J52kZ3ZAcbk2-EgHobF/view?usp=sharing"><img src="https://img.shields.io/badge/Download-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows"></a>
+  <a href="https://drive.google.com/file/d/1FasxCYfAqauVtSRsnj2_xT1pW40WVz89/view?usp=sharing"><img src="https://img.shields.io/badge/Download-macOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="Download for macOS"></a>
+  <img src="https://img.shields.io/badge/Linux-Coming_Soon-lightgrey?style=for-the-badge&logo=linux&logoColor=white" alt="Linux Coming Soon">
+</p>
+
+<p align="center">
+  <sub>Direct Google Drive downloads · SHA-256 Verified · Java 21 Embedded · AES-256-GCM Vault</sub>
+</p>
+
 ## Light Mode Preview
 
 ![DevOps AI Desktop - Live Telemetry and Diagnostics (Light Mode)](assets/app-showcase-light.png)
+
+## 📥 Download
+
+<div align="center">
+
+### Free during Public Beta — No account required
+
+</div>
+
+| Platform | File | Requirements | Download |
+| :--- | :--- | :--- | :--- |
+| 🪟 **Windows** | `DevOpsAI-windows-msi.zip` | Windows 10 / 11 · 64-bit · MSI (zipped) | [**⬇ Download for Windows**](https://drive.google.com/file/d/1TLD8nOrt3c3l3J52kZ3ZAcbk2-EgHobF/view?usp=sharing) |
+| 🍏 **macOS** | `DevOpsAI-macOS-dmg.zip` | macOS 12+ · Apple Silicon (M1–M4) & Intel · Universal DMG (zipped) | [**⬇ Download for macOS**](https://drive.google.com/file/d/1FasxCYfAqauVtSRsnj2_xT1pW40WVz89/view?usp=sharing) |
+| 🐧 **Linux** | `DevOpsAI-Linux` | `.deb` · `.rpm` · `.tar.gz` · Wayland & X11 | `Coming Soon` — Windows & macOS available now |
+
+> **Google Drive Mirror** — Clicking download opens Google Drive in a new tab. No sign-in required.
+>
+> Specs: `SHA-256 Verified` · `Java 21 Embedded` · `AES-256-GCM Vault` · `Zero Admin Rights Needed` (Windows) · `Apple Notarized` & `Native Keychain` (macOS)
+
+<details>
+<summary><strong>Verify your download (optional)</strong></summary>
+
+After download, verify SHA-256 if a checksum is published on the release page:
+
+```bash
+# macOS / Linux
+shasum -a 256 DevOpsAI-*.zip
+
+# Windows (PowerShell)
+Get-FileHash DevOpsAI-windows-msi.zip -Algorithm SHA256
+```
+
+</details>
 
 ## Features
 
@@ -50,13 +93,16 @@ Local-first security · Autonomous SRE · Production Linux ops
 
 </div>
 
-<div align="center">
-
 ## Contact
 
-📧 [piash599@gmail.com](mailto:piash599@gmail.com) — beta help and feedback
+<div align="center">
+
+**Direct line to the builder — beta help, feedback & bug reports. Response within 24h during Public Beta.**
+
 <br>
-🐙 [github.com/piashcse](https://github.com/piashcse) — report an issue
+
+<a href="mailto:piash599@gmail.com"><img src="https://img.shields.io/badge/Email-piash599@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email piash599@gmail.com"></a>
+<a href="https://github.com/piashcse"><img src="https://img.shields.io/badge/GitHub-Report_an_Issue-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub piashcse"></a>
 
 </div>
 
