@@ -14,6 +14,12 @@ Local-first. No agents. No cloud sync. Available for Windows, macOS, and Linux. 
   <sub>Direct Google Drive downloads · SHA-256 Verified · Java 21 Embedded · AES-256-GCM Vault</sub>
 </p>
 
+<p align="center">
+  <a href="https://piashcse.github.io/devops-ai-site/"><img src="https://img.shields.io/badge/🌐_Explore_Live_Website-piashcse.github.io%2Fdevops--ai--site-4F46E5?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Explore Live Website"></a>
+  <br>
+  <sub>Full interactive preview, feature deep-dives & docs on the official GitHub Pages site — <a href="https://piashcse.github.io/devops-ai-site/">piashcse.github.io/devops-ai-site</a></sub>
+</p>
+
 ## Light Mode Preview
 
 ![DevOps AI Desktop - Live Telemetry and Diagnostics (Light Mode)](assets/app-showcase-light.png)
