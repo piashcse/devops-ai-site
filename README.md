@@ -7,7 +7,7 @@ Local-first. No agents. No cloud sync. Available for Windows, macOS, and Linux. 
 <p align="center">
   <a href="https://drive.google.com/file/d/1TLD8nOrt3c3l3J52kZ3ZAcbk2-EgHobF/view?usp=sharing"><img src="https://img.shields.io/badge/Download-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows"></a>
   <a href="https://drive.google.com/file/d/1FasxCYfAqauVtSRsnj2_xT1pW40WVz89/view?usp=sharing"><img src="https://img.shields.io/badge/Download-macOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="Download for macOS"></a>
-  <img src="https://img.shields.io/badge/Linux-Coming_Soon-lightgrey?style=for-the-badge&logo=linux&logoColor=white" alt="Linux Coming Soon">
+  <a href="https://drive.google.com/file/d/14HSMlhJxhFkDmFNedZSsb5KXk5IIXOlz/view?usp=sharing"><img src="https://img.shields.io/badge/Download-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Download for Linux"></a>
 </p>
 
 <p align="center">

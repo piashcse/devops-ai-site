@@ -8,7 +8,7 @@
 const GOOGLE_DRIVE_LINKS = {
   windows: 'https://drive.google.com/file/d/1TLD8nOrt3c3l3J52kZ3ZAcbk2-EgHobF/view?usp=sharing',
   macos:   'https://drive.google.com/file/d/1FasxCYfAqauVtSRsnj2_xT1pW40WVz89/view?usp=sharing',
-  linux:   'https://drive.google.com/drive/folders/YOUR_GOOGLE_DRIVE_LINUX_LINK'
+  linux:   'https://drive.google.com/file/d/14HSMlhJxhFkDmFNedZSsb5KXk5IIXOlz/view?usp=sharing'
 };
 
 document.addEventListener('DOMContentLoaded', () => {
